@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+   align-items: center;
+
+    min-height: 100vh;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .cart-button {
+    padding: 0.5rem;
+  }
+  
+  .main-content {
+   
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    height:auto;
+  }
+  
+  .product-detail {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .product-image2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 0.5rem;
+background-color: white;
+padding: 10px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .product-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .stars {
+    display: flex;
+  }
+  
+  .star {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #FFD700; /* Change to your preferred color */
+  }
+  
+  .reviews {
+    font-size: 0.875rem;
+    color: #6b7280; /* Tailwind's muted foreground color */
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    color: #6b7280; /* Tailwind's muted foreground color */
+  }
+  
+  .quantity-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .quantity-button {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+   border-radius: 5px;}
+  
+  .quantity-input {
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+  }
+  
+  .add-to-cart-button2 {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.125rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+.add-to-cart-button2:active {
+    background-color: #00000025; 
+    transform: scale(0.95); 
+}
