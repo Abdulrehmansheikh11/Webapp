@@ -7,15 +7,15 @@ import { useCart } from '../../Context/Content';
 const Navbar = () => {
   const navigate = useNavigate();
   const { cartItems } = useCart(); 
-  const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  const uniqueItemCount = cartItems.length;
 
   return (
     <div className="navbar">
       <div className="navbar-left">ShopNow</div>
       <div className="navbar-right">
         <FaShoppingCart className="cart-icon" onClick={() => navigate("/cart")} />
-        {totalQuantity > 0 && (
-          <span className="cart-quantity">{totalQuantity}</span> 
+        {uniqueItemCount > 0 && (
+          <span className="cart-quantity">{uniqueItemCount}</span> 
         )}
       </div>
     </div>
